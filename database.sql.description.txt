@@ -1,0 +1,9 @@
+This database contains 1.8 million certificates collected through certificate transparency and a fully populated route age table using the algorithm from BGP-age-false-positive-study (https://github.com/inspire-group/BGP-age-false-positive-study). The AS resilience table is populated by resiliences for each AS using the following five ASes as vantage points:
+
+AS30060
+AS13649
+AS48447
+AS4713
+AS4713
+
+Each of these 5 ASes contain a leading CA. The resiliences were calculated as per "Understanding Resiliency of Internet Topology against Prefix Hijack Attacks" (DOI: 10.1109/DSN.2007.95). For each AS we calculated an effective resilience by using the minimum resilience of the 5 vantage points. This is intended to simulate an attackers ability to pick a CA. 
